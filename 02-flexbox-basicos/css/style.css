@@ -150,7 +150,7 @@ h2 {
     align-items: center;
 }
 
-/* 8 Flex Basis*/
+/* 8 Flex Basis (se puede utilizar para dar ancho a un elemento)*/
 
 .d-flex-8{
     display: flex;
@@ -175,5 +175,69 @@ h2 {
 .d-flex-9 .box:nth-child(2),
 .d-flex-9 .box:nth-child(3){
     flex-basis: calc(25% - 1rem);
+}
 
+/* Flex Wrap (salto de linea)*/
+
+.d-flex-10{
+  display: flex;
+  flex-wrap: wrap;
+  /* "nowrap" no hace salto de linea, y "wrap" si lo hace. Por defecto, los navegadores le aplican nowrap. */
+}
+
+.d-flex-10 .box{
+  flex-basis: 33.3%;
+}
+
+/* Flex Grow (factor de crecimiento de los elementos en CSS)*/
+
+.d-flex-11{
+  display: flex;
+}
+
+/* con flex-grow puedo asignar a cada hijo el factor de crecimiento que deseo, con numeros, se asignará en proporción a cada elemento. En el ejemplo de abajo, el hijo 1, recibe el doble de pixeles que los otros dos. */
+
+.d-flex-11 .box:nth-child(1){
+  flex-grow: 2;
+}
+.d-flex-11 .box:nth-child(2){
+  flex-grow: 1;
+}
+.d-flex-11 .box:nth-child(3){
+  flex-grow: 1;
+}
+
+/* Flex Shrink */
+
+/* podría indicar, a que "velocidad" se hace mas chico X elemento a medida que se achica el contenedor (la pantalla). Entonces en el ejemplo de abajo, si achico la pantalla primero se achica el elemento 3, hasta que llega a su minimo y entonces se empiezan a achica a la par los otros dos*/
+
+/* flex-grow es faltor de crecimiento de un elemento, flex-shrink es el factor que indica como se va a haciendo mas chico un elemento */
+
+.d-flex-12{
+  display: flex;
+}
+.d-flex-12 .box{
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+
+.d-flex-12 .box:nth-child(3){
+  flex-shrink: 2;
+}
+
+/* Flex Shorthand */
+
+.d-flex-13{
+  display: flex;
+}
+
+.d-flex-13 .box{
+  /*  
+  flex-basis: 33.3%;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  Se reemplaza por:
+  */
+  flex: 1 0 33.3%;
 }
