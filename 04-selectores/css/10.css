@@ -1,0 +1,11 @@
+/* 10 Atributo */
+
+/* que termine con... (el link de la tienda termina en .html, pero no comienza con http) */
+a[href$=".html"]{
+    color: red;
+}
+
+/* que comience con... */
+a[href^="http"]{
+    color: red;
+}

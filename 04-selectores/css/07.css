@@ -1,0 +1,17 @@
+/* 7 2 Elementos */
+
+.texto{
+    border: 3px solid yellow;
+    padding: 2rem;
+}
+
+.oferta{
+    border: 3px solid yellow;
+    padding: 2rem;
+}
+
+/* lo de arriba se puede reemplazar por lo siguiente, poniendo una coma entre clases cuando se repiten las mismas especificidades */
+.texto, .oferta{
+    border: 3px solid yellow;
+    padding: 2rem;
+}

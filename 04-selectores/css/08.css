@@ -1,0 +1,6 @@
+/* 8 Primer Nivel de Hijos */
+
+/* se selecciona con el > signo de mayor qué, aplica al primer nivel de hijos de .admin, en este caso. Si no lo pondría aplicaría un doble borde porque hay otro div dentro y lo toma */
+.admin > div{
+    border: 2px solid red;
+}

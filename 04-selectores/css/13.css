@@ -1,0 +1,11 @@
+/* 13 Elemento en Especifico */
+
+ul li:nth-child(2){
+    border: 2px solid red;
+}
+
+/* con el 4n + 1 va a haciendo como un bucle, le va aplicando a todos los elementos de la lista que estoy seleccionando, no importa cuantos sean, hasta el final 4 por N (incremental) + 1. En este caso se aplica a 1 y a 5, el 2 esta seleccionado por lo de arriba*/
+
+ul li:nth-child(4n + 1){
+    border: 2px solid red;
+}

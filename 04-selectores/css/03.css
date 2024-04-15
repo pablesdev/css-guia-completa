@@ -1,0 +1,22 @@
+/* Selector de 2 Clases */
+
+.texto{
+    background-color: red;
+}
+
+.azul{
+    color: blue;
+}
+
+.mayusculas{
+    text-transform: uppercase;
+}
+
+/* para seleccionar dos clases a la vez, aplicar al elemento que tenga las 2 clases, se escriben las dos o más juntas, SIN ESPACIO */
+.text.mayusculas{
+    font-size: 10rem;
+}
+
+.texto.azul{
+    text-align: right;
+}
