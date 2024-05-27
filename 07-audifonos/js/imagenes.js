@@ -64,4 +64,3 @@
       window.sandboxApi.parentWindow.document) ||
       document
   );
-  
